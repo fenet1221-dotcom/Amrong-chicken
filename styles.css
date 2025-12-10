@@ -8,7 +8,7 @@ font-family: "Outfit", sans-serif;
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/ima.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/back.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -76,4 +76,9 @@ transition: 0.5s;
     font-size: 20px;
     background: transparent;
     position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 10px solid #f44336;
+    transition: 1s;
 }
