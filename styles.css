@@ -86,16 +86,41 @@ transition: 0.5s;
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100%;
+    padding-top: 100px;
 }
 h1{
     font-size: 36px;
-    font-weight: 600%;
+    font-weight: 600;
 }
 p{
     color: black;
     font-size: 14px;
-    font-weight: 300%;
+    font-weight: 300;
     line-height: 22px;
     padding: 0;
 }
+
+
+.branches-scroll {
+    display: flex;
+    overflow-x: auto;     
+    gap: 40px;           
+    padding: 20px;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+       
+
+    .Branches-col{
+         flex: 0 0 250px; 
+        background: #f44336;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+         white-space: normal;
+         transition: 0.5s;
+    }
+    .Branches-col:hover{
+       box-shadow: 0 0 15px rgba(0,0,0,0.9);
+    }
