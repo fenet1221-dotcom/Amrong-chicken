@@ -10,13 +10,47 @@
         <section class="contact-header">
             <nav>
                 <a href="index.html"> <img src="images/logo.png"</a>
-                <div class="nav-links" id="nav-links"></div>
+                <div class="nav-links" id="nav-links">
                 <i class="fa fa-times" onclick="hidemenu()"> </i>
                 <ul>
-                    <li> <a </li>
+                    <li> <a href="index.html">home</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    
                 </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
             </nav>
-
+<div class="contact-section">
+    <h1>CONTACT US</h1>
+    <p>we'd love to hear from you</p>
+</div>
         </section>
+        <section class="contact-section">
+            <div class="contact-info">
+                <h2>Get in touch</h2>
+                <p><strong>📞 phone;</strong> +251 900 000 000</p>
+                <p><strong>📧 email</strong> amrong@gmail.com</p>
+
+                <h3>opening hours</h3>
+                <p> monday - sunday</p>
+                <p> 8:00 am -8:00 pm</p>
+
+            </div>
+            <div class="contact-form">
+                <h2>send message</h2>
+                <form>
+                    <input type="text" placeholder="your name" required>
+                    <input type="email" placeholder="your email" required>
+                    <input type="text" placeholder="subject" required>
+                    <textarea placeholder="your message" rows="5" required></textarea>
+                    <button type="submit" class="hero-btn">send message</button>
+                </form>
+            </div>
+        </section>
+        <script>
+            var navlinks=document.getElementById("navlinks");
+            function showmenu(){navlinks.style.right ="0";}
+            function hidemenu(){ navlinks.style.right = "-200";}
+        </script>
     </body>
 </html>
