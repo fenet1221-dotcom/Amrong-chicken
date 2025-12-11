@@ -2,73 +2,168 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu - AMRONG CHICKEN</title>
-    
-    <!-- Main stylesheet -->
+    <title>Menu | Amrong Chicken</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
+<!-- HEADER SECTION -->
 <section class="menu-header">
     <nav>
-        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <a href="index.html"><img src="images/logo.png" /></a>
+
         <div class="nav-links" id="navlinks">
             <i class="fa fa-times" onclick="hidemenu()"></i>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
+                <li><a class="active" href="menu.html">Menu</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Branches</a></li>
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showmenu()"></i>
     </nav>
 
-    <div class="text-box">
+    <div class="menu-title">
+   
         <h1>Our Menu</h1>
-        <p>Explore our delicious chicken meals and combos</p>
+        <p>Delicious chicken meals made fresh every day</p>
     </div>
 </section>
 
-<!-- MENU CONTENT -->
+<!-- MENU GRID -->
 <section class="menu-section">
     <h2>Popular Dishes</h2>
 
     <div class="menu-grid">
 
         <div class="menu-item">
-            <h3>Fried Chicken</h3>
-            <p>Crispy and juicy fried chicken served hot.</p>
-        </div>
-
-        <div class="menu-item">
+            <img src="images/grilled.png" alt="">
             <h3>Grilled Chicken</h3>
-            <p>Perfectly seasoned and flame-grilled.</p>
+            <p>Perfectly seasoned grilled chicken served with fries.</p>
+            <span class="price">1250 ETB</span>
         </div>
 
         <div class="menu-item">
-            <h3>Chicken Burger</h3>
-            <p>Served with cheese, lettuce, and special sauce.</p>
+            <img src="images/rostedd.png" alt="">
+            <h3>Rosted chicken</h3>
+            <p> A whole chicken cooked in an oven. </p>
+            <span class="price">1500 ETB</span>
         </div>
 
         <div class="menu-item">
-            <h3>Chicken Combo</h3>
-            <p>Combo special with fries and soft drink.</p>
+            <img src="images/shwarma.png" alt="">
+            <h3>special shwarma</h3>
+            <p>Juicy chicken patty with fresh veggies & sauce.</p>
+            <span class="price">380 ETB</span>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/fam.png" alt="">
+            <h3>Family Combo</h3>
+            <p>Full chicken + fries + salad + rice</p>
+            <span class="price">1740 ETB</span>
+        </div>
+         <div class="menu-item">
+            <img src="images/wings.png" alt="">
+            <h3>Chicken wings</h3>
+            <p>cooked wings + fries +rice</p>
+            <span class="price">640 ETB</span>
+        </div>
+         <div class="menu-item">
+            <img src="images/mofo.png" alt="">
+            <h3>chicken mofo</h3>
+            <p> Marinated and steamed chicken served with rice, Hot Sauce, mayonnaise and pita.</p>
+            <span class="price">1530 ETB</span>
+        </div>
+         <div class="menu-item">
+            <img src="images/kabsa.png" alt="">
+            <h3>chicken kabsa</h3>
+            <p>cooked with tender chicken, onions, tomatoes, and a blend of warm spices </p>
+            <span class="price">1370 ETB</span>
+        </div>
+         <div class="menu-item">
+            <img src="images/frid.avif" alt="">
+            <h3> Fried chicken</h3>
+            <p>various cuts of chicken coated in a batter or breading and deep-fried until crispy and cooked through.</p>
+            <span class="price">1000 ETB</span>
+        </div>
+    </div>
+    <!-- EXTRAS SECTION -->
+<section class="menu-section">
+    <h2>Extras</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="images/pita.png" alt="">
+            <h3>Pita Bread</h3>
+            <p>Fresh warm pita, perfect with chicken.</p>
+            <span class="price">25 ETB</span>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/french.png" alt="">
+            <h3>French Fries</h3>
+            <p>Crispy golden fries served hot.</p>
+            <span class="price">70 ETB</span>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/ketchup.avif" alt="">
+            <h3>Ketchup</h3>
+            <p>Extra ketchup for dipping.</p>
+            <span class="price">50 ETB</span>
         </div>
 
     </div>
 </section>
 
+
+<!-- DRINKS SECTION -->
+<section class="menu-section">
+    <h2>Drinks</h2>
+
+    <div class="menu-grid">
+
+        <div class="menu-item">
+            <img src="images/coc.png" alt="">
+            <h3>Coca-Cola</h3>
+            <p>Cold & refreshing.</p>
+            <span class="price">55 ETB</span>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/spr.png" alt="">
+            <h3>Sprite</h3>
+            <p>Lemon-lime flavor.</p>
+            <span class="price">55 ETB</span>
+        </div>
+
+        <div class="menu-item">
+            <img src="images/water.png" alt="">
+            <h3>Water</h3>
+            <p>500ml bottled water.</p>
+            <span class="price">50 ETB</span>
+        </div>
+         <div class="menu-item">
+            <img src="images/mojito.png" alt="">
+            <h3>mojito</h3>
+            <p>Different flavor mojitos for refreshmenet</p>
+            <span class="price">120 ETB</span>
+        </div>
+
+    </div>
+</section>
+
+</section>
+
 <script>
     var navlinks = document.getElementById("navlinks");
-    function showmenu(){
-        navlinks.style.
-    }
+    function showmenu(){ navlinks.style.right="0"; }
+    function hidemenu(){ navlinks.style.right="-200px"; }
+</script>
+
+</body>
+</html>

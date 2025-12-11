@@ -162,29 +162,128 @@ p{
             flex-direction: column;
         }
     }
-    .menu-header {
-    min-height: 80vh;
+    /* MENU HEADER BACKGROUND */
+.menu-header {
+    min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
-    url('images/ima.png');
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(images/rosted.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     position: relative;
 }
-.menu-headers{
+
+.menu-title {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.menu-title h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.menu-title p {
+    font-size: 18px;
+    margin-top: 10px;
+  color: white;
+}
+
+/* MENU SECTION */
+.menu-section {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* MENU GRID */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 170px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.menu-item p {
+    color: #555;
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #f44336;
+    font-size: 20px;
+}
+/* CONTACT PAGE (Wooden background) */
+.contact-header {
+    width: 100%;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('images/wood-bg.jpg');  /* <-- put wooden image here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.contact-text h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.contact-info {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding: 50px 0;
 }
-h1{
-    font-size: 36px;
-    font-weight: 600;
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
 }
-p{
-    color: black;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 0;
+
+.contact-col {
+    flex-basis: 30%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
 }
