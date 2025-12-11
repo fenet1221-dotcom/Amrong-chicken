@@ -8,19 +8,23 @@
         <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playwrite+NO:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">"
-    </head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"   
+</head>
     <body>
 <section class="header">
 <nav>
     <a href="index.html"> <img src="images/logo.png"</a>
-    <div class="nav-links">
-        <ul>
+    <div class="nav-links" id="navlinks">
+       
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+             <ul>
             <li><a href="">Home</a></li>
             <li><a href="">Menu</a></li>
             <li><a href="">Contact</a></li>
             <li><a href="">Branches</a></li>
         </ul>
     </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
 </nav>
 <div class="text-box">
     <h1>Beast chicken in town</h1>
@@ -56,5 +60,14 @@
 </div>
 </div>
 </section>
+<script>
+    var navlinks=document.getElementById("navlinks");
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+    function hidemenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
     </body>
 </html>
