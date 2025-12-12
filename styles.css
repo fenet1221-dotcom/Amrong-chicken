@@ -13,10 +13,7 @@ font-family: "Outfit", sans-serif;
     background-size: cover;
     position: relative;
 }
-.header p{
-    color: #ccc;
-    font-size: 100px;
-}
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -360,4 +357,15 @@ gap: 15px;
 
 .contact-btn:hover {
     background: #d8372e;
+}
+.footer{
+    width: 100%;
+    background: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer{
+    color: #ccc;
+    font-size: 16px;
 }
