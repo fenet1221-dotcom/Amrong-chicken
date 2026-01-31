@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +19,25 @@
 <nav>
     <a href="index.html"> <img src="images/logo.png" ></a>
     <div class="nav-links" id="navlinks">
-       
+
+<div class="cart-icon" id="cart-icon" style="position: relative; cursor: pointer; display: inline-block; margin-left: 20px;">
+    🛒 Cart
+    <span class="cart-count" id="cart-count" 
+          style="display: none; 
+                 position: absolute; 
+                 top: -8px; 
+                 right: -8px; 
+                 background: #ff4444; 
+                 color: white; 
+                 border-radius: 50%; 
+                 width: 18px; 
+                 height: 18px; 
+                 font-size: 12px; 
+                 display: flex; 
+                 align-items: center; 
+                 justify-content: center;">
+    </span>
+</div>
             <i class="fa fa-times" onclick="hidemenu()"></i>
              <ul>
             <li><a href="">Home</a></li>
@@ -97,7 +116,23 @@
 </div>
 
 </footer>
-
-
+<div class="cart-modal" id="cart-modal" style="display: none; position: fixed; top: 0; right: 0; width: 100%; max-width: 400px; height: 100%; background: white; box-shadow: -2px 0 10px rgba(0,0,0,0.1); z-index: 1000; overflow-y: auto;">
+    <div class="cart-header" style="display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid #eee;">
+        <h2 style="margin: 0;">Your Order</h2>
+        <button id="close-cart" style="background: none; border: none; font-size: 24px; cursor: pointer;">×</button>
+    </div>
+    <div class="cart-items" id="cart-items" style="padding: 20px;">
+       
+    </div>
+    <div class="cart-footer" style="padding: 20px; border-top: 1px solid #eee; position: sticky; bottom: 0; background: white;">
+        <div class="cart-total" style="margin-bottom: 20px;">
+            <h3 style="margin: 0;">Total: <span id="cart-total">$0.00</span></h3>
+        </div>
+        <button id="checkout-btn" style="width: 100%; padding: 15px; background: #ff6b6b; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+            Proceed to Checkout
+        </button>
+    </div>
+</div>
+<script src="script.js"></script>
     </body>
 </html>
