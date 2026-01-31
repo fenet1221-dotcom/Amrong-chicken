@@ -518,4 +518,5 @@ document.addEventListener('DOMContentLoaded', function() {
     if (cartCount > 0) {
         updateCartDisplay();
     }
+
 });
